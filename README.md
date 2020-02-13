@@ -1,6 +1,6 @@
 # CppSource
 
-Repo for Qt template homework on 2019/2020 C++ course
+Repo for 7th homework on 2019/2020 C++ course. PizzaMaker app!
 
 # Task 1
 
