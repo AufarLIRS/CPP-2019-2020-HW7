@@ -3,40 +3,40 @@
 
 enum class PizzaType
 {
-  Pepperoni,
-  Margarita,
-  FourCheeses,
-  Sea
+  Pepperoni = -2,
+  Margarita = -3,
+  FourCheeses = -4,
+  Sea = -5
 };
 
 enum class DoughType
 {
-  Thin,
-  Traditional
+  Thin = -2,
+  Traditional = -3
 };
 
 enum class Olives
 {
-  No,
-  Yes
+  Yes = -2,
+  No = -3
 };
 
 enum class Pepperoni
 {
-  No,
-  Yes
+  Yes = -2,
+  No = -3
 };
 
 enum class DoubleCheese
 {
-  No,
-  Yes
+  Yes = -2,
+  No = -3
 };
 
 enum class Pineapples
 {
-  No,
-  Yes
+  Yes = -2,
+  No = -3
 };
 
 #endif  // PIZZAENUMCOLLECTION_H
