@@ -6,39 +6,39 @@
 class Pizza
 {
 private:
-  Impasto _impasto;
-  PizzaTipo _pizzatipo;
+  Dough _dough;
+  PizzaType _pizzatipo;
   Olive _olive;
   Pepperoni _pepperoni;
-  DoppioFormaggio _doppioFormaggio;
-  Ananas _ananas;
+  DoubleCheese _doubleCheese;
+  Pineapple _pineapple;
 
-  Pizza(Impasto impasto, PizzaTipo pizzatipo, Olive olive, Pepperoni pepperoni, DoppioFormaggio doppioFormaggio,
-        Ananas ananas);
+  Pizza(Dough dough, PizzaType pizzatipo, Olive olive, Pepperoni pepperoni, DoubleCheese doubleCheese,
+        Pineapple pineapple);
 
 public:
   class Builder
   {
   private:
-    Impasto _impasto;
-    PizzaTipo _pizzaTipo;
+    Dough _dough;
+    PizzaType _pizzaType;
     Olive _olive;
     Pepperoni _pepperoni;
-    DoppioFormaggio _doppioFormaggio;
-    Ananas _ananas;
+    DoubleCheese _doubleCheese;
+    Pineapple _pineapple;
 
   public:
-    Builder& SetImpasto(Impasto impasto);
+    Builder& SetDough(Dough dough);
 
-    Builder& SetPizzaTipo(PizzaTipo PizzaTipo);
+    Builder& SetPizzaType(PizzaType PizzaType);
 
     Builder& SetOlives(Olive olive);
 
     Builder& SetPepperoni(Pepperoni pepperoni);
 
-    Builder& SetdoppioFormaggio(DoppioFormaggio doppioFormaggio);
+    Builder& SetdoubleCheese(DoubleCheese doubleCheese);
 
-    Builder& SetAnanas(Ananas ananas);
+    Builder& SetPineapple(Pineapple pineapple);
 
     Pizza build();
   };

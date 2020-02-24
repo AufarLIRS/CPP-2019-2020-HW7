@@ -1,15 +1,15 @@
 #include "pizza.h"
 
 //------------Сеттеры для Билдела-----------------//
-Pizza::Builder& Pizza::Builder::SetImpasto(Impasto Impasto)
+Pizza::Builder& Pizza::Builder::SetDough(Dough Dough)
 {
-  _impasto = Impasto;
+  _dough = Dough;
   return *this;
 }
 
-Pizza::Builder& Pizza::Builder::SetPizzaTipo(PizzaTipo PizzaTipo)
+Pizza::Builder& Pizza::Builder::SetPizzaType(PizzaType PizzaType)
 {
-  _pizzaTipo = PizzaTipo;
+  _pizzaType = PizzaType;
   return *this;
 }
 
@@ -25,21 +25,21 @@ Pizza::Builder& Pizza::Builder::SetPepperoni(Pepperoni pepperoni)
   return *this;
 }
 
-Pizza::Builder& Pizza::Builder::SetdoppioFormaggio(DoppioFormaggio doppioFormaggio)
+Pizza::Builder& Pizza::Builder::SetdoubleCheese(DoubleCheese doubleCheese)
 {
-  _doppioFormaggio = doppioFormaggio;
+  _doubleCheese = doubleCheese;
   return *this;
 }
 
-Pizza::Builder& Pizza::Builder::SetAnanas(Ananas ananas)
+Pizza::Builder& Pizza::Builder::SetPineapple(Pineapple pineapple)
 {
-  _ananas = ananas;
+  _pineapple = pineapple;
   return *this;
 }
 
 Pizza Pizza::Builder::build()
 {
-  return Pizza(_impasto, _pizzaTipo, _olive, _pepperoni, _doppioFormaggio, _ananas);
+  return Pizza(_dough, _pizzaType, _olive, _pepperoni, _doubleCheese, _pineapple);
 }
 //----------------------------------------//
 
@@ -47,35 +47,35 @@ QString Pizza::GetOrder()
 {
   QString StringBuilder;
   StringBuilder.append("Mamma Mia!\n").append("Вы собрали пиццу: \n");
-  switch (_impasto)
+  switch (_dough)
   {
-    case Impasto::Sottile:
+    case Dough::Thin:
       StringBuilder.append("Пицца из тонкого теста\n");
       break;
-    case Impasto::Tradizionale:
+    case Dough::Traditional:
       StringBuilder.append("Пицца из традиционного теста\n");
       break;
   }
 
   switch (_pizzatipo)
   {
-    case PizzaTipo::Pepperoni:
+    case PizzaType::Pepperoni:
       StringBuilder.append("Вид: Пепперони\n");
       break;
-    case PizzaTipo::Margarita:
+    case PizzaType::Margarita:
       StringBuilder.append("Вид: Маргарита\n");
       break;
-    case PizzaTipo::QuattroFormaggi:
+    case PizzaType::DoubleCheese:
       StringBuilder.append("Вид: Четыре сыра\n");
       break;
-    case PizzaTipo::Mare:
+    case PizzaType::Mare:
       StringBuilder.append("Вид: Морская\n");
       break;
   }
 
   switch (_olive)
   {
-    case Olive::Si:
+    case Olive::Yes:
       StringBuilder.append("Добавлены оливки\n");
     case Olive::No:
       StringBuilder.append("Без Оливок\n");
@@ -83,39 +83,45 @@ QString Pizza::GetOrder()
 
   switch (_pepperoni)
   {
-    case Pepperoni::Si:
+    case Pepperoni::Yes:
       StringBuilder.append("Добавлены Пепперони\n");
+      break;
     case Pepperoni::No:
       StringBuilder.append("Без Пепперони\n");
+      break;
   }
 
-  switch (_doppioFormaggio)
+  switch (_doubleCheese)
   {
-    case DoppioFormaggio::Si:
+    case DoubleCheese::Yes:
       StringBuilder.append("Добавлен Сыр\n");
-    case DoppioFormaggio::No:
+      break;
+    case DoubleCheese::No:
       StringBuilder.append("Без Сыра\n");
+      break;
   }
 
-  switch (_ananas)
+  switch (_pineapple)
   {
-    case Ananas::Si:
+    case Pineapple::Yes:
       StringBuilder.append("Добавлены Ананасы\n");
-    case Ananas::No:
+      break;
+    case Pineapple::No:
       StringBuilder.append("Без Ананасов\n");
+      break;
   }
 
   return StringBuilder;
 }
 
 //Конструктор самой пиццы
-Pizza::Pizza(Impasto Impasto, PizzaTipo PizzaTipo, Olive olive, Pepperoni pepperoni, DoppioFormaggio doppioFormaggio,
-             Ananas ananas)
+Pizza::Pizza(Dough Dough, PizzaType PizzaType, Olive olive, Pepperoni pepperoni, DoubleCheese doubleCheese,
+             Pineapple pineapple)
 {
-  _impasto = Impasto;
-  _pizzatipo = PizzaTipo;
+  _dough = Dough;
+  _pizzatipo = PizzaType;
   _olive = olive;
   _pepperoni = pepperoni;
-  _doppioFormaggio = doppioFormaggio;
-  _ananas = ananas;
+  _doubleCheese = doubleCheese;
+  _pineapple = pineapple;
 }

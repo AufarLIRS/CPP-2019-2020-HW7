@@ -1,41 +1,41 @@
 #ifndef PIZZACOLLECTION_H
 #define PIZZACOLLECTION_H
 
-enum class PizzaTipo
+enum class PizzaType
 {
   Pepperoni = -2,
   Margarita = -3,
-  QuattroFormaggi = -4,
+  DoubleCheese = -4,
   Mare = -5
 };
 
-enum class Impasto
+enum class Dough
 {
-  Sottile = -2,
-  Tradizionale = -3
+  Thin = -2,
+  Traditional = -3
 };
 
 enum class Olive
 {
-  Si = -2,
+  Yes = -2,
   No = -3
 };
 
 enum class Pepperoni
 {
-  Si = -2,
+  Yes = -2,
   No = -3
 };
 
-enum class DoppioFormaggio
+enum class DoubleCheese
 {
-  Si = -2,
+  Yes = -2,
   No = -3
 };
 
-enum class Ananas
+enum class Pineapple
 {
-  Si = -2,
+  Yes = -2,
   No = -3
 };
 

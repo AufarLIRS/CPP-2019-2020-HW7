@@ -19,17 +19,17 @@ void MainWindow::on_PizzaPushButton_clicked()
 
   auto builder = Pizza::Builder();
 
-  builder.SetImpasto(Impasto(ui->DoughButtonGroup->checkedId()));
+  builder.SetDough(Dough(ui->DoughButtonGroup->checkedId()));
 
-  builder.SetPizzaTipo(PizzaTipo(ui->PizzaButtonGroup->checkedId()));
+  builder.SetPizzaType(PizzaType(ui->PizzaButtonGroup->checkedId()));
 
   builder.SetOlives(Olive(ui->OlivesButtonGroup->checkedId()));
 
   builder.SetPepperoni(Pepperoni(ui->PepperoniButtonGroup->checkedId()));
 
-  builder.SetdoppioFormaggio(DoppioFormaggio(ui->CheeseButtonGroup->checkedId()));
+  builder.SetdoubleCheese(DoubleCheese(ui->CheeseButtonGroup->checkedId()));
 
-  builder.SetAnanas(Ananas(ui->PineapplesButtonGroup->checkedId()));
+  builder.SetPineapple(Pineapple(ui->PineapplesButtonGroup->checkedId()));
 
   auto pizza = builder.build();
 

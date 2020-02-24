@@ -51,7 +51,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QGroupBox" name="PizzaTipoGroupBox">
+     <widget class="QGroupBox" name="PizzaTypeGroupBox">
       <property name="title">
        <string>Вид пиццы</string>
       </property>
