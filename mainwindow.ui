@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>366</width>
-    <height>852</height>
+    <height>595</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,7 +51,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QGroupBox" name="PizzaTypeGroupBox">
+     <widget class="QGroupBox" name="PizzaTipoGroupBox">
       <property name="title">
        <string>Вид пиццы</string>
       </property>
@@ -161,7 +161,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QGroupBox" name="DoubleCheeseGroupBox">
+     <widget class="QGroupBox" name="doppioFormaggioGroupBox">
       <property name="title">
        <string>Двойной сыр</string>
       </property>
@@ -241,7 +241,7 @@
      <x>0</x>
      <y>0</y>
      <width>366</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -250,15 +250,15 @@
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="PineapplesButtonGroup"/>
+  <buttongroup name="OlivesButtonGroup"/>
+  <buttongroup name="CheeseButtonGroup"/>
+  <buttongroup name="PepperoniButtonGroup"/>
   <buttongroup name="DoughButtonGroup">
    <property name="exclusive">
     <bool>true</bool>
    </property>
   </buttongroup>
   <buttongroup name="PizzaButtonGroup"/>
-  <buttongroup name="OlivesButtonGroup"/>
-  <buttongroup name="PepperoniButtonGroup"/>
-  <buttongroup name="CheeseButtonGroup"/>
-  <buttongroup name="PineapplesButtonGroup"/>
  </buttongroups>
 </ui>
