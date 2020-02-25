@@ -17,10 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    pizza.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    pizza.h
 
 FORMS += \
     mainwindow.ui
