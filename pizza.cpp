@@ -7,62 +7,62 @@ Pizza::Pizza()
   ;
 }
 
-AdditionalOlives Pizza::getOlives()
+Pizza::AdditionalOlives Pizza::getOlives()
 {
   return olives_;
 }
 
-AdditionalPepperoni Pizza::getPepperoni()
+Pizza::AdditionalPepperoni Pizza::getPepperoni()
 {
   return pepperoni_;
 }
 
-AdditionalPineapples Pizza::getPineapples()
+Pizza::AdditionalPineapples Pizza::getPineapples()
 {
   return pineapples_;
 }
 
-DoubleCheese Pizza::getDoubleCheese()
+Pizza::DoubleCheese Pizza::getDoubleCheese()
 {
   return doubleCheese_;
 }
 
-PizzaRecipe Pizza::getRecipe()
+Pizza::PizzaRecipe Pizza::getRecipe()
 {
   return recipe_;
 }
 
-BaseType Pizza::getBaseType()
+Pizza::BaseType Pizza::getBaseType()
 {
   return type_;
 }
 
-void PizzaBuilder::setOlives(AdditionalOlives arg)
+void PizzaBuilder::setOlives(Pizza::AdditionalOlives arg)
 {
   pizza.olives_ = arg;
 }
 
-void PizzaBuilder::setRecipe(PizzaRecipe arg)
+void PizzaBuilder::setRecipe(Pizza::PizzaRecipe arg)
 {
   pizza.recipe_ = arg;
 }
 
-void PizzaBuilder::setBaseType(BaseType arg)
+void PizzaBuilder::setBaseType(Pizza::BaseType arg)
 {
   pizza.type_ = arg;
 }
 
-void PizzaBuilder::setPepperoni(AdditionalPepperoni arg)
+void PizzaBuilder::setPepperoni(Pizza::AdditionalPepperoni arg)
 {
   pizza.pepperoni_ = arg;
 }
 
-void PizzaBuilder::setPineapples(AdditionalPineapples arg)
+void PizzaBuilder::setPineapples(Pizza::AdditionalPineapples arg)
 {
   pizza.pineapples_ = arg;
 }
 
-void PizzaBuilder::setDoubleCheese(DoubleCheese arg)
+void PizzaBuilder::setDoubleCheese(Pizza::DoubleCheese arg)
 {
   pizza.doubleCheese_ = arg;
 }
@@ -74,10 +74,10 @@ Pizza PizzaBuilder::makePizza()
 
 PizzaBuilder::PizzaBuilder()
 {
-  pizza.type_ = BaseType::STANDART;
-  pizza.recipe_ = PizzaRecipe::PEPPERONI;
-  pizza.olives_ = AdditionalOlives::NO;
-  pizza.pepperoni_ = AdditionalPepperoni::NO;
-  pizza.pineapples_ = AdditionalPineapples::NO;
-  pizza.doubleCheese_ = DoubleCheese::NO;
+  pizza.type_ = Pizza::BaseType::STANDARD;
+  pizza.recipe_ = Pizza::PizzaRecipe::PEPPERONI;
+  pizza.olives_ = Pizza::AdditionalOlives::NO;
+  pizza.pepperoni_ = Pizza::AdditionalPepperoni::NO;
+  pizza.pineapples_ = Pizza::AdditionalPineapples::NO;
+  pizza.doubleCheese_ = Pizza::DoubleCheese::NO;
 }

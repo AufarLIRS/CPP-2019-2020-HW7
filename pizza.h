@@ -2,46 +2,48 @@
 
 namespace pizza
 {
-enum class BaseType
-{
-  STANDART = 1,
-  THIN = 2
-};
-
-enum class PizzaRecipe
-{
-  PEPPERONI = 1,
-  MARGARITA = 2,
-  FOUR_CHESES,
-  SEA
-};
-
-enum class AdditionalOlives
-{
-  YES = 1,
-  NO = 2
-};
-
-enum class AdditionalPepperoni
-{
-  YES = 1,
-  NO = 2
-};
-
-enum class DoubleCheese
-{
-  YES = 1,
-  NO = 2
-};
-
-enum class AdditionalPineapples
-{
-  YES = 1,
-  NO = 2
-};
-
 class Pizza
 {
+public:
+  enum class BaseType
+  {
+    STANDARD = 1,
+    THIN = 2
+  };
+
+  enum class PizzaRecipe
+  {
+    PEPPERONI = 1,
+    MARGARITA = 2,
+    FOUR_CHEESES = 3,
+    SEA = 4
+  };
+
+  enum class AdditionalOlives
+  {
+    YES = 1,
+    NO = 2
+  };
+
+  enum class AdditionalPepperoni
+  {
+    YES = 1,
+    NO = 2
+  };
+
+  enum class DoubleCheese
+  {
+    YES = 1,
+    NO = 2
+  };
+
+  enum class AdditionalPineapples
+  {
+    YES = 1,
+    NO = 2
+  };
+
+private:
   BaseType type_;
   PizzaRecipe recipe_;
   AdditionalOlives olives_;
@@ -67,12 +69,12 @@ class PizzaBuilder
 
 public:
   PizzaBuilder();
-  void setBaseType(BaseType arg);
-  void setRecipe(PizzaRecipe arg);
-  void setOlives(AdditionalOlives arg);
-  void setDoubleCheese(DoubleCheese arg);
-  void setPineapples(AdditionalPineapples arg);
-  void setPepperoni(AdditionalPepperoni arg);
+  void setBaseType(Pizza::BaseType arg);
+  void setRecipe(Pizza::PizzaRecipe arg);
+  void setOlives(Pizza::AdditionalOlives arg);
+  void setDoubleCheese(Pizza::DoubleCheese arg);
+  void setPineapples(Pizza::AdditionalPineapples arg);
+  void setPepperoni(Pizza::AdditionalPepperoni arg);
   Pizza makePizza();
 };
 }
