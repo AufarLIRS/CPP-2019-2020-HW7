@@ -6,17 +6,281 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>366</width>
+    <height>852</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QGroupBox" name="BaseGroupBox">
+      <property name="title">
+       <string>Выбор теста</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QRadioButton" name="RadioButtonThinBase">
+         <property name="text">
+          <string>Тонкое тесто</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">DoughButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RadioButtonStandartBase">
+         <property name="text">
+          <string>Традиционное тесто</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">DoughButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="PizzaTypeGroupBox">
+      <property name="title">
+       <string>Вид пиццы</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QRadioButton" name="RadioButtonPepperoni">
+         <property name="text">
+          <string>Пепперони</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">PizzaButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RadioButtonMargarita">
+         <property name="text">
+          <string>Маргарита</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">PizzaButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RadioButtonFourCheese">
+         <property name="text">
+          <string>Четыре сыра</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">PizzaButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RadioButtonSea">
+         <property name="text">
+          <string>Морская</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">PizzaButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="OlivesGroupBox">
+      <property name="title">
+       <string>Оливки</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QRadioButton" name="RadioButtonYesOlives">
+         <property name="text">
+          <string>Да</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">OlivesButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RadioButtonNoOlives">
+         <property name="text">
+          <string>Нет</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">OlivesButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="PepperoniGroupBox">
+      <property name="title">
+       <string>Пепперони</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QRadioButton" name="RadioButtonYesPepperoni">
+         <property name="text">
+          <string>Да</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">PepperoniButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RadioButtonNoPepperoni">
+         <property name="text">
+          <string>Нет</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">PepperoniButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="DoubleCheeseGroupBox">
+      <property name="title">
+       <string>Двойной сыр</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QRadioButton" name="RadioButtonYesCheese">
+         <property name="text">
+          <string>Да</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">CheeseButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RadioButtonNoCheese">
+         <property name="text">
+          <string>Нет</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">CheeseButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="PineappleGroupBox">
+      <property name="title">
+       <string>Ананасы</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QRadioButton" name="RadioButtonYesPineapple">
+         <property name="text">
+          <string>Да</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">PineapplesButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="RadioButtonNoPineapple">
+         <property name="text">
+          <string>Нет</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">PineapplesButtonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="PushButtonMakePizza">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Make Pizza!</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEditLog">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>366</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="PineapplesButtonGroup"/>
+  <buttongroup name="OlivesButtonGroup"/>
+  <buttongroup name="PepperoniButtonGroup"/>
+  <buttongroup name="DoughButtonGroup">
+   <property name="exclusive">
+    <bool>true</bool>
+   </property>
+  </buttongroup>
+  <buttongroup name="PizzaButtonGroup"/>
+  <buttongroup name="CheeseButtonGroup"/>
+ </buttongroups>
 </ui>
