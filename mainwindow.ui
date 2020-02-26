@@ -6,17 +6,306 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>322</width>
+    <height>765</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <widget class="QGroupBox" name="DoughTypeGroupBox">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Выбор теста</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QRadioButton" name="ThinDoughRadioButton">
+           <property name="text">
+            <string>Тонкое тесто</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">DoughButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="TraditionalDoughRadioButton">
+           <property name="text">
+            <string>Традиционное тесто</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">DoughButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="PizzaTypeGroupBox">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Вид пиццы</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QRadioButton" name="PepperRadioButton">
+           <property name="text">
+            <string>Пепперони</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">TypeButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="MargaritaRadioButton">
+           <property name="text">
+            <string>Маргарита</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">TypeButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="FourCheeseRadioButton">
+           <property name="text">
+            <string>Четыре сыра</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">TypeButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="SeaRadioButton">
+           <property name="text">
+            <string>Морская</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">TypeButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="OlivesGroupBox">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Оливки</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QRadioButton" name="OlivesYesRadioButton">
+           <property name="text">
+            <string>Да</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">OlivesButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="OlivesNoRadioButton">
+           <property name="text">
+            <string>Нет</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">OlivesButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="PepperGroupBox">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Пепперони</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QRadioButton" name="PepperYesRadioButton">
+           <property name="text">
+            <string>Да</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">PepperButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="PepperNoRadioButton">
+           <property name="text">
+            <string>Нет</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">PepperButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="CheeseGroupBox">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Двойной сыр</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QRadioButton" name="CheeseYesRadioButton">
+           <property name="text">
+            <string>Да</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">CheeseButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="CheeseNoRadioButton">
+           <property name="text">
+            <string>Нет</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">CheeseButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="PineapplesGroupBox">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>Ананасы</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QRadioButton" name="PineapplesYesRadioButton">
+           <property name="text">
+            <string>Да</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">PineapplesButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="PineapplesNoRadioButton">
+           <property name="text">
+            <string>Нет</string>
+           </property>
+           <attribute name="buttonGroup">
+            <string notr="true">PineapplesButtonGroup</string>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="MakePizzaPushButton">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Make Pizza!</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>322</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="OlivesButtonGroup"/>
+  <buttongroup name="TypeButtonGroup"/>
+  <buttongroup name="CheeseButtonGroup"/>
+  <buttongroup name="DoughButtonGroup"/>
+  <buttongroup name="PineapplesButtonGroup"/>
+  <buttongroup name="PepperButtonGroup"/>
+ </buttongroups>
 </ui>
